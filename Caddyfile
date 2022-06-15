@@ -14,16 +14,6 @@ http://site2.com {
         file_server
 }
 
-http://php-site.com {
-        root * /var/www/php_site
-        php_fastcgi * php-server:9000
-        file_server
-}
-
-http://node-site.com {
-        reverse_proxy node-server:8080
-}
-
 http://wordpress-site.com {
 	reverse_proxy wordpress:80
 }
