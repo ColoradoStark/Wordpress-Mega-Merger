@@ -13,9 +13,14 @@ http://site2.com {
 }
 
 http://wordpress-site.com {
-        templates
-        file_server
-        root * /www-data
-        try_files {path}.html {path}
-        reverse_proxy wordpress:80  
+	handle_path /templates* {
+		root * /www-data
+		try_files {path}.html {path}
+		templates
+		file_server
+	}
+
+	handle {
+		reverse_proxy wordpress:80
+	}
  }
