@@ -4,11 +4,11 @@
 
 ## Why did I make this?
 
-This repository was made to solve this specific use case:  Maybe you made a bunch of websites, maybe you bought a few websites.  But now, you have 5 or more websites that don't have a CMS or have different CMS, and you want to roll them up into one new domain and manage all of the content via CMS.
+This repository was made to solve this specific use case:  Maybe you made a bunch of websites, maybe you bought a few websites.  But now, you have 5 or more websites that don't have a CMS or have different CMS, and you want to consolidate all of your sites into one new domain and manage all of the content via CMS.
 
 ## What exactly does this do?
 
-What it accomplishes:  Every page from the sites being merged will be preserved. Every URL will be 301 redirected to the new site. And you can still control all pages via a CMS. 
+Every page from the sites being merged will be preserved. Every link will still resolve.  Every URL will be 301 redirected to the new site. And you can still control all pages via a CMS. 
 
 ## How does it do it?
 
