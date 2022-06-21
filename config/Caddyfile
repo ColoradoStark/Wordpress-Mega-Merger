@@ -17,16 +17,12 @@ http://site2.com {
 }
 
 http://wordpress-site.com {
-	handle_path /templates* {
-		root * /var/www/templates
+	handle_path /site1* {
+		root * /var/www/site1
 
 		try_files {path}.html {path}
 		templates
 		file_server
-	}
-
-	handle_path /blog* {
-		reverse_proxy wordpress:80
 	}
 
 	handle {
