@@ -18,8 +18,8 @@ To achieve this, it uses 2 CMS systems: Wordpress and Caddy Templates.  Any new 
 Ubuntu, Docker, Docker-Compose, Caddy
 
 ## How do I run this?
- - 1. Edit the Caddyfile to include and redirect your domains and paths (just follow the format in the file)
- - 2. On an Ubuntu server with Docker and Docker-Compose installed clone the repo
- - 3. type `cd Wordpress-Mega-Merger`
- - 4. type `docker-compose up`
+1. On an Ubuntu server with Docker and Docker-Compose installed clone the repo
+2. Edit the Caddyfile to include and redirect your domains and paths (just follow the format in the file)
+3. type `cd Wordpress-Mega-Merger`
+4. type `docker-compose up`
 
