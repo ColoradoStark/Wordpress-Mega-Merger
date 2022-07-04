@@ -10,7 +10,9 @@ services:
       - ./www-data:/var/www
       - ./config:/etc/caddy
   db:
-    image: mysql:8.0
+    image: mysql:8.0.15
+    cap_add:
+      - SYS_NICE # CAP_SYS_NICE
     volumes:
       - db_data:/var/lib/mysql
     restart: always
